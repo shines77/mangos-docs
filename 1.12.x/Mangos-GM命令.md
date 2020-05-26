@@ -1,30 +1,47 @@
 # Mangos 1.12.1 GM 命令
 
 ```shell
-.additem                增加物品 -----------
-.additemset             增加套装 ----------------
-.bank                   打开仓库 -
-.maxskill               将已会技能学至300/300 (单手剑熟练度..等) ---------
-.levelup 59             为目标(或自己) 增加59级 -------------
+.additem                增加物品
+.additemset             增加套装
+.bank                   打开仓库
+
+.levelup 59             为目标(或自己) 增加59级
 .learn all_lang         学习所有语言
-.learn all_myclass      学习自己的全部技能
+.learn all_myspells     学习自己职业的所有可直接学习的技能(不包含天赋点出来的技能, 也不点天赋)
+.learn all_myclass      学习自己职业的全部技能和点满所有天赋点
 .modify money 99999999  为目标(或自己) 增加9999金99银99铜（有效）
 .modify hp x            增加目标的HP
-.taxicheat 1            飞行线路作弊
-.explorecheat 1         探索地图作弊
-.revive                 复活当前目标, 或自己 --------------------
+.maxskill               将已会技能学至300/300 (单手剑熟练度..等)
+.taxicheat on           飞行线路作弊
+.explorecheat on        探索地图作弊
+.revive                 复活当前目标, 或自己
 .changelevel 数字       可以改变目标生物的等级
 .delete                 将目标生物从地图里删除
 .speed 20               移动加速
-.saveall                保存在线玩家数据 ----------------
+.saveall                保存所有在线玩家数据
 ```
 
 ```shell
+.learn all_myspells
 .maxskill
-.learn all_lang
+
+.learn all_mytalents    学习你所点天赋的所有技能
 .learn all_myclass
-.learn all_mytalents
-.learn crafts          Learn all professions and recipes.
+.learn all_lang
+
+把某个专业技能的技能点数学到满级, 且学习所有可能的配方和图纸.
+
+.learn all_recipes 工程学
+.learn all_recipes 附魔
+.learn all_recipes 裁缝
+.learn all_recipes 炼金术
+
+.learn all_recipes 急救
+.learn all_recipes 烹饪
+
+----------------------------------------------------------------------------------
+.learn all_crafts       Learn all professions and recipes. (慎用, 客户端会报错!)
+----------------------------------------------------------------------------------
 
 
 .lookup itemset 灵风    查询灵风套装的 itemsetID
@@ -34,15 +51,26 @@
 
 .tele add $name         添加一个传送点，并命名为 $name
 .tele $name             传送到名为 $name 的传送点
+
+.tele horse             传送到人类买马的马厩
+.tele start             传送到人类新手村
 .tele storm             传送到暴风城
+.tele iron              传送到铁炉堡
+
+.groupgo $playername    把指定的玩家所在团队的所有在线玩家传送到你的面前, 该指定的玩家可以离线, 但必须在团队中.
+.tele group #location   Teleport a selected player and his group members to a given location.
+
+.learn all_default [$playername]
+						Learn for selected/$playername player all default spells for his race/class and spells rewarded by completed quests.
 ```
 
 学习全部技能的命令，选择自己后使用。
 
 ```shell
-.learn all
 .learn all_lang
 .learn all_myclass
+
+.learn all              慎用, 会学习所有职业的所有技能, 不推荐!!
 ```
 
 18格包
@@ -71,6 +99,7 @@
 
 ```shell
 
+技能学习(英文版)
 .learn all_recipes engineering
 .learn all_recipes enchanting
 
