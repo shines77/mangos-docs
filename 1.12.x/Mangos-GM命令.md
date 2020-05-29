@@ -38,6 +38,7 @@
 
 .learn all_recipes 急救
 .learn all_recipes 烹饪
+.learn all_recipes 钓鱼
 
 ----------------------------------------------------------------------------------
 .learn all_crafts       Learn all professions and recipes. (慎用, 客户端会报错!)
@@ -46,16 +47,107 @@
 
 .lookup itemset 灵风    查询灵风套装的 itemsetID
 
-.additemset 210         增加法师灵风套装
-.additemset 218         增加战士愤怒套装
+.additemset 209         战士(T1) 力量套装
+.additemset 218         战士(T2) 愤怒套装
+
+.additemset 204         盗贼(T1) 夜幕杀手套装
+.additemset 213         盗贼(T2) 血牙套装
+
+.additemset 201         法师(T1) 奥术师套装
+.additemset 210         法师(T2) 灵风套装
+
+.additemset 203         术士(T1) 恶魔之心套装
+.additemset 212         术士(T2) 复仇套装
+
+.additemset 206         猎人(T1) 巨人追猎者套装
+.additemset 215         猎人(T2) 巨龙追猎者套装
+
+.additemset 202         牧师(T1) 预言套装
+.additemset 211         牧师(T2) 卓越套装
+
+.additemset 208         圣骑士(T1) 秩序之源套装
+.additemset 217         圣骑士(T2) 审判套装
+
+.additemset 205         德鲁伊(T1) 塞纳里奥套装
+.additemset 214         德鲁伊(T2) 怒风套装
+
+.additemset 207         萨满(T1) 大地之怒套装
+.additemset 216         萨满(T2) 无尽风暴套装
+
+.additem 18713          猎人史诗弓
+.additem 18715          猎人史诗杖
+.additem 19361			埃瑟利苏尔，惩戒之弩
+
+.additem 19859			无面者之牙
+.additem 19865			哈卡莱战刃（主手）
+.additem 19866			哈卡莱战刃（副手）
+
+.learn 1515    			猎人抓宠物  
+.learn 13921    		大师级附魔 
+
+
+战士: t0 = 189 / t0.5 = 511 / t1 = 209 / t2 = 218 / t2.5 = 496 / t3 = 523 / t4(tank) = 654 / t4(dmg) = 655 / t5(tank) = 656 / t5(dmg) = 657 / PvPalli1 = 545 / PvPalli2 = 384 / PvPalli3 = 590 / PvPhorde1 = 537 / PvPhorde2 = 391 / PvPhorde3 = 588 / Gladiatorset = 567
+
+圣骑士: t0 = 188 / t0.5 = 516 / t1 = 208 / t2 = 217 / t2.5 = 505 / t3 = 528 / t4(heal) = 624 / t4(dmg) = 626 / t4(def) = 625 / t5(heal) = 627 / t5(dmg) = 629 / t5(def) = 628 / PvPalli1 = 544 / PvPalli2 = 402 / PvPalli3(heal) = 694 / PvPalli3(dmg) = 608 / PvPalli3(def) = 587 / PvPhorde3(heal) = 694 / PvPhorde3(dmg) = 608 / PvPhorde3(def) = 587 / Gladiatorset(heal) = 690 / Gladiatorset(dmg) = 583 / Gladiatorset(def) = 582
+
+猎人: t0 = 186 / t0.5 = 515 / t1 = 206 / t2 = 215 / t2.5 = 509 / t3 = 530 / t4 = 651 / t5 = 652 / PvPalli1 = 550 / PvPalli2 = 395 / PvPhorde1 = 543 / PvPhorde2 = 396 / Gladiatorset = 586
+
+盗贼: t0 = 184 / t0.5 = 512 / t1 = 204 / t2 = 213 / t2.5 = 497 / t3 = 524 / t4 = 621 / t5 = 622 / PvPalli1 = 548 / PvPalli2 = 394 / PvPalli3 = 605 / PvPhorde1 = 522 / PvPhorde2 = 393 / PvPhord3 = 606 / Gladiatorset = 577
+
+牧师: t0 = 182 / t0.5 = 514 / t1 = 202 / t2 = 211 / t2.5 = 507 / t3 = 525 / t4(heal) = 663 / t4(dmg) = 664 / t5(heal = 665 / t5(dmg) = 666 / PvPalli1 = 549 / PvPalli2 = 389 / PvPalli3(heal) = 691 / PvPalli3(dmg) = 597 / PvPhorde1 = 540 / PvPhorde2 = 390 / PvPhorde3(heal) = 598 / PvPhorde3(dmg) = 692 / Gladiatorset(heal) = 687 / Gladiatorset(dmg) = 581
+
+萨满: t0 = 187 / t0.5 = 519 / t1 = 207 / t2 = 216 / t2.5 = 501 / t3 = 527 / t4(heal) = 631 / t4(spelldmg) = 632 / t4(meeledmg) = 633 / t5(heal) = 686 / t5(spelldmg) = 580 / t5(meeledmg) = 593 / PvPalli3(heal) = 695 / PvPalli3(spelldmg) = 603 / PvPalli3(meeledmg) = 593 / PvPhorde1 = 538 / PvPhorde2 = 386 / PvPhorde3(heal) = 696 / PvPhorde3(spelldmg) = 604 / PvPhorde3(meleedmg) = 594 / Gladiatorset(heal) = 686 / Gladiatorset(spelldmg) = 580 / Gladiatorset(meleedmg) = 578
+
+法师: t0 = 181 / t0.5 = 517 / t1 = 201 / t2 = 210 / t2.5 = 503 / t3 = 526 / t4 = 648 / t5 = 649 / PvPalli1 = 546 / PvPalli2 = 388 / PvPalli3 = 599 / PvPhorde1 = 542 / PvPhorde2 = 397 / PvPhorde3 = 600 / Gladiatorset = 579
+
+术士: t0 = 183 / t0.5 = 518 / t1 = 203 / t2 = 212 / t2.5 = 499 / t3 = 529 / t4 = 645 / t5 = 646 / PvPalli1 = 547 / PvPalli2 = 392 / PvPalli3 = 591 / PvPhorde1 = 541 / PvPhorde2 = 383 / PvPhorde3 = 592 / Gladiatorset(dmg) = 615 / Gladiatorset(tank) = 568
+
+德鲁伊: t0 =185 / t0.5 = 513 / t1 = 205 / t2 = 214 / t2.5 = 493 / t3 = 521 / t4(heal) = 638 / t4(moonkin) = 639 / t4(feral) = 640 / t5(heal) = 642 / t5(moonkin) = 643 / t5(feral) = 641 / PvPalli1 = 551 / PvPalli2 = 397 / PvPalli3(heal) = 688 / PvPalli3(moonkin) = 609 / PvPalli3(feral) = 601 / PVPhorde1 = 539 / PvPhorde2 = 398 / PvPhorde3(heal) = 689 / PvPhorde3(moonkin) = 610 / PvPhorde3(feral) = 602 / Gladiatorset(heal) = 685 / Gladiatorset(moonkin) = 585 / Gladiatorset(feral) = 584
 
 .tele add $name         添加一个传送点，并命名为 $name
 .tele $name             传送到名为 $name 的传送点
 
-.tele horse             传送到人类买马的马厩
-.tele start             传送到人类新手村
+.tele start             传送到人类新手村 (*)
+.tele jingling          传送到暗夜精灵新手村 (*)
+
+.tele horse             传送到人类买马（坐骑）的NPC (*)
+.tele jlhorse           传送到暗夜精灵买老虎（坐骑）的NPC (*)
+
 .tele storm             传送到暴风城
 .tele iron              传送到铁炉堡
+.tele dnss              传送到达纳苏斯（暗夜精灵主城）
+
+.tele zul               传送到祖尔格拉布
+
+.tele naxx              传送到纳克萨玛斯
+.tele bl                传送到时光之穴
+
+.tele org               传送到灼热峡谷（33，61）
+.tele on                传送到斯通纳德营地（部落）
+.tele sm                传送到奥格瑞玛-暗影裂口副本门口（部落）
+
+.tele jjs               传送到加基森营地 (*_)
+.tele swb               传送到守望堡营地 - 诅咒之地（65，24） (*_)
+.tele zzzd              传送到诅咒之地（51，15） (*_)
+
+.tele mc                传送到熔火之心门口 (*_)
+.tele bwl               传送到黑石塔门口 (*_)
+.tele taq               传送到安其拉神庙 (*_)
+.tele aql               传送到安其拉废墟 (*_)
+.tele kaimen            传送到安其拉大门-开门任务NPC处 (*_)
+.tele xlss              传送到希利苏斯营地 (*_)
+
+.tele OnyxiasLair       传送到奥妮克希亚的巢穴
+.tele ZulFarrak         传送到祖尔法拉克
+.tele ZulGurub          传送到祖尔格拉布
+
+.lookup area 希利苏斯    查询希利苏斯的ZoneId，结果是1377
+
+.go zonexy 29 92 1377	传送到希利苏斯(29,92), 安其拉副本门口
+.go zonexy 50 29 440    传送到塔纳利斯(50,29), 加基森
+
+1377 	希利苏斯
+440  	塔纳利斯
 
 .groupgo $playername    把指定的玩家所在团队的所有在线玩家传送到你的面前, 该指定的玩家可以离线, 但必须在团队中.
 .tele group #location   Teleport a selected player and his group members to a given location.
@@ -71,6 +163,20 @@
 .learn all_myclass
 
 .learn all              慎用, 会学习所有职业的所有技能, 不推荐!!
+```
+
+声望
+
+```
+.character reputation	查询玩家当前的所有声望值
+
+.lookup faction 雷矛	查询相关声望的faction id，为730
+
+.modify rep 72 42999    设置暴风城的声望为崇拜999
+.modify rep 47 42999    设置铁炉堡的声望为崇拜999
+.modify rep 54 42999    设置诺莫瑞根流亡者的声望为崇拜999
+.modify rep 69 42999    设置达纳苏斯的声望为崇拜999
+.modify rep 730 42999   设置雷矛卫队的声望为崇拜999
 ```
 
 18格包
@@ -273,6 +379,7 @@
 
 ```shell
 17077 魔仗(赤红震荡者+10火抗)
+19861 混乱之触
 ```
 
 双手剑
@@ -440,6 +547,11 @@
 2246  戒指(追随者的印记+10力7敏17耐)
 13143 戒指(龙王徽记，使用吸收伤害500，护盾存在时回魔提高每5秒22点持续30分钟)
 17110 戒指(60级)(魔法导师的封印+11耐智精6火自冰暗抗，每5秒回3点蓝)
+
+17063 埃古雷亚指环
+19325 胡里奥指环
+18821 迅击戒指
+18500 暗淡的精灵戒指
 ```
 
 饰品
@@ -449,6 +561,13 @@
 13503 饰品(炼金石+8精，喝红蓝时效果提高33%，需要炼金300)
 14557 饰品(暴风雄师号角，被击中有1%使队友护甲提高250持续30秒)
 18406 饰品(奥妮克希亚龙血护符)
+
+13966 暴君印记 （+1闪避）
+13968 比斯巨兽之眼 （法系+2暴击）
+13965 黑手饰物 （物理+2暴击）
+
+19339 思维加速宝石
+18820 短暂能量护符
 ```
 
 套装
