@@ -82,8 +82,15 @@
 .additem 19865			哈卡莱战刃（主手）
 .additem 19866			哈卡莱战刃（副手）
 
-.learn 1515    			猎人抓宠物  
-.learn 13921    		大师级附魔 
+.learn 1515    			猎人技能：驯服野兽
+
+.learn 883     			猎人技能：召唤宠物
+.learn 2641     	    猎人技能：解散野兽
+.learn 5149             猎人技能：训练野兽
+.learn 1584             猎人技能：喂养宠物
+.learn 982              猎人技能：复活宠物
+
+.learn 13921    		大师级附魔
 
 
 战士: t0 = 189 / t0.5 = 511 / t1 = 209 / t2 = 218 / t2.5 = 496 / t3 = 523 / t4(tank) = 654 / t4(dmg) = 655 / t5(tank) = 656 / t5(dmg) = 657 / PvPalli1 = 545 / PvPalli2 = 384 / PvPalli3 = 590 / PvPhorde1 = 537 / PvPhorde2 = 391 / PvPhorde3 = 588 / Gladiatorset = 567
@@ -126,16 +133,26 @@
 .tele on                传送到斯通纳德营地（部落）
 .tele sm                传送到奥格瑞玛-暗影裂口副本门口（部落）
 
-.tele jjs               传送到加基森营地 (*_)
-.tele swb               传送到守望堡营地 - 诅咒之地（65，24） (*_)
-.tele zzzd              传送到诅咒之地（51，15） (*_)
+.tele ywz               传送到冬泉谷 - 永望镇营地 (*)
+.tele jjs               传送到加基森营地 (*)
+.tele zzzd              传送到诅咒之地（51，15） (*)
+.tele swb               传送到守望堡营地 - 诅咒之地（65，24） (*)
 
-.tele mc                传送到熔火之心门口 (*_)
-.tele bwl               传送到黑石塔门口 (*_)
-.tele taq               传送到安其拉神庙 (*_)
-.tele aql               传送到安其拉废墟 (*_)
-.tele kaimen            传送到安其拉大门-开门任务NPC处 (*_)
-.tele xlss              传送到希利苏斯营地 (*_)
+.tele dlne              传送到泰达希尔(55，58), 多兰纳尔，接暗夜精灵猎人宠物任务
+.tele dlne2             抓猎人抓宠物第二步--抓夜刃猎豹的地方
+.tele dlne3             抓猎人抓宠物第三步--抓巨翼恶枭的地方
+
+
+.tele dqgzx             传送到冬泉谷（54，34） - 冬泉谷地图中央
+.tele dqglh             传送到冬泉谷（50，12） - 抓59级老虎，57级拉克里西 (*)
+.tele dqgmty            传送到冬泉谷（63，59） - 抓58级猫头鹰，学8级爪击 (*)
+
+.tele mc                传送到熔火之心门口 (*)
+.tele bwl               传送到黑石塔门口 (*)
+.tele taq               传送到安其拉神庙 (*)
+.tele aql               传送到安其拉废墟 (*)
+.tele kaimen            传送到安其拉大门-开门任务NPC处 (*)
+.tele xlss              传送到希利苏斯营地 (*)
 
 .tele OnyxiasLair       传送到奥妮克希亚的巢穴
 .tele ZulFarrak         传送到祖尔法拉克
@@ -143,11 +160,17 @@
 
 .lookup area 希利苏斯    查询希利苏斯的ZoneId，结果是1377
 
-.go zonexy 29 92 1377	传送到希利苏斯(29,92), 安其拉副本门口
-.go zonexy 50 29 440    传送到塔纳利斯(50,29), 加基森
+.go zonexy 29 92 1377	传送到希利苏斯(29，92), 安其拉副本门口
+.go zonexy 50 29 440    传送到塔纳利斯(50，29), 加基森
+.go zonexy 61 38 618    传送到冬泉谷(61，38), 永望镇
 
-1377 	希利苏斯
+.go zonexy 55 58 141    传送到泰达希尔(55，58), 多兰纳尔
+
 440  	塔纳利斯
+618     冬泉谷
+1377 	希利苏斯
+1657    达纳苏斯
+141     泰达希尔
 
 .groupgo $playername    把指定的玩家所在团队的所有在线玩家传送到你的面前, 该指定的玩家可以离线, 但必须在团队中.
 .tele group #location   Teleport a selected player and his group members to a given location.
