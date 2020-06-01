@@ -166,11 +166,12 @@
 
 .go zonexy 55 58 141    传送到泰达希尔(55，58), 多兰纳尔
 
+141     泰达希尔
 440  	塔纳利斯
 618     冬泉谷
 1377 	希利苏斯
 1657    达纳苏斯
-141     泰达希尔
+
 
 .groupgo $playername    把指定的玩家所在团队的所有在线玩家传送到你的面前, 该指定的玩家可以离线, 但必须在团队中.
 .tele group #location   Teleport a selected player and his group members to a given location.
