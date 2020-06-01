@@ -15,7 +15,7 @@
 .account create $account $password
 
 例如：
-.account create test test123
+.account create test test1234
 ```
 
 注：该命令需要 `GM (4级)` 权限。

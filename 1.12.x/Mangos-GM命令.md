@@ -177,6 +177,8 @@
 
 .learn all_default [$playername]
 						Learn for selected/$playername player all default spells for his race/class and spells rewarded by completed quests.
+
+						为当前目标或者指定的玩家 $playername 学习他的种族/职业的所有默认技能以及完成任务可获得的奖励技能。		
 ```
 
 学习全部技能的命令，选择自己后使用。
@@ -199,6 +201,7 @@
 .modify rep 47 42999    设置铁炉堡的声望为崇拜999
 .modify rep 54 42999    设置诺莫瑞根流亡者的声望为崇拜999
 .modify rep 69 42999    设置达纳苏斯的声望为崇拜999
+
 .modify rep 730 42999   设置雷矛卫队的声望为崇拜999
 ```
 
