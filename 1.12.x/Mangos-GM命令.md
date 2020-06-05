@@ -1212,6 +1212,44 @@
 ```
 
 ```shell
+
+.npc add 4952   添加一个1级训练假人
+.npc changelevel 60
+.npc changelevel 62
+.npc changelevel 63
+
+.npc add 1289    添加一个NPC商人
+npc flag 16389
+DisplayID: 1429
+Faction: 12
+Unit Flags: 4608
+
+暴风城
+
+.npc add 4732   添加人类骑术训练师
+.npc add 384    添加人类坐骑商人
+
+.npc add 5479   添加暴风城战士训练师
+.npc add 918    添加暴风城盗贼训练师
+.npc add 928    添加暴风城圣骑士训练师
+.npc add 5484   添加暴风城牧师训练师
+
+.npc add 5497   添加暴风城法师训练师
+.npc add 2485   添加暴风城法师传送门训练师
+
+.npc add 5495   添加暴风城术士训练师
+.npc add 5520   添加暴风城术士宠物训练师
+
+.npc add 5515   添加暴风城猎人训练师
+.npc add 2879   添加暴风城猎人宠物训练师
+.npc add 11069  添加暴风城猎人宠物训练师
+
+铁炉堡
+
+.npc add 4772   添加矮人骑术训练师
+.npc add 1261   添加人类坐骑商人
+
+
 .help 下马 Mount from the mount number #(max=3) lvl10=1 lvl15=2 lvl20=3
 .start 转换到你的出生点 **
 .save 储存人物信息 **
@@ -1274,6 +1312,17 @@
 
 先修改 character_kil 表中的 honor 为 67000（大元帅或高阶督军级别）
 再修改 lcharacter 表中的 rating 为 67000，就可以了。
+
+.modify honor todaykills 9999
+.modify honor thisweekkills 9999
+.modify honor thisweekkills 9999
+.modify honor lefttimehonorablekills 9999
+.modify honor point 67000
+.modify honor rank 18
+
+.honor update
+
+points / rank / todaykills
 
 ```shell
 id  name  item 1  item 2  item 3  item 4  item 5  item 6  item 7  item 8
