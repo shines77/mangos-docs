@@ -1224,30 +1224,80 @@ DisplayID: 1429
 Faction: 12
 Unit Flags: 4608
 
+武器大师
+
+.npc add 11867  暴风城武器大师
+.npc add 11865  铁炉堡武器大师
+.npc add 11866  达纳苏斯武器大师
+
+坐骑商人
+
+.npc add 4732   人类骑术训练师
+.npc add 384    人类坐骑商人
+
+.npc add 4772   矮人骑术训练师
+.npc add 1261   矮人坐骑商人
+
+.npc add 7954   侏儒骑术训练师
+.npc add 7955   侏儒坐骑商人
+
+.npc add 4753   精灵骑术训练师
+.npc add 4730   精灵坐骑商人
+
 暴风城
 
-.npc add 4732   添加人类骑术训练师
-.npc add 384    添加人类坐骑商人
+.npc add 5479   暴风城战士训练师
+.npc add 918    暴风城盗贼训练师
+.npc add 000    暴风城盗贼毒药商人
+.npc add 928    暴风城圣骑士训练师
+.npc add 5484   暴风城牧师训练师
 
-.npc add 5479   添加暴风城战士训练师
-.npc add 918    添加暴风城盗贼训练师
-.npc add 928    添加暴风城圣骑士训练师
-.npc add 5484   添加暴风城牧师训练师
+.npc add 5497   暴风城法师训练师
+.npc add 2485   暴风城法师传送门训练师
 
-.npc add 5497   添加暴风城法师训练师
-.npc add 2485   添加暴风城法师传送门训练师
+.npc add 5495   暴风城术士训练师
+.npc add 5520   暴风城术士宠物训练师
 
-.npc add 5495   添加暴风城术士训练师
-.npc add 5520   添加暴风城术士宠物训练师
-
-.npc add 5515   添加暴风城猎人训练师
-.npc add 2879   添加暴风城猎人宠物训练师
-.npc add 11069  添加暴风城猎人宠物训练师
+.npc add 5515   暴风城猎人训练师
+.npc add 2879   暴风城猎人宠物训练师
+.npc add 11069  暴风城兽栏管理员
 
 铁炉堡
 
-.npc add 4772   添加矮人骑术训练师
-.npc add 1261   添加人类坐骑商人
+.npc add 1901   铁炉堡战士训练师
+.npc add 5166   铁炉堡盗贼训练师
+.npc add 5149   铁炉堡圣骑士训练师
+.npc add 11406  铁炉堡牧师训练师
+
+.npc add 5145   铁炉堡法师训练师
+.npc add 2489   铁炉堡法师传送门训练师
+
+.npc add 5172   铁炉堡术士训练师
+.npc add 6382   铁炉堡术士宠物训练师
+
+.npc add 5116   铁炉堡猎人训练师
+.npc add 10090  铁炉堡猎人宠物训练师
+.npc add 9984   铁炉堡兽栏管理员
+
+.npc add 5169   铁炉堡盗贼毒药商人
+
+达纳苏斯
+
+.npc add 4087   暗夜精灵战士训练师
+.npc add 4214   暗夜精灵盗贼训练师
+.npc add 4091   暗夜精灵牧师训练师
+.npc add 4218   暗夜精灵德鲁伊训练师
+
+.npc add 4146   暗夜精灵猎人训练师
+.npc add 10089  暗夜精灵猎人宠物训练师
+.npc add 10056  暗夜精灵兽栏管理员
+
+.npc add 3561   暗夜精灵盗贼毒药商人
+.npc add 4165   达纳苏斯法师传送门训练师
+
+GuidReserveSize.* is full
+
+.npc additem 18348 0 0 1
 
 
 .help 下马 Mount from the mount number #(max=3) lvl10=1 lvl15=2 lvl20=3
@@ -1307,6 +1357,11 @@ Unit Flags: 4608
 .kick 从世界中剔出去一个选定的玩家
 .die 杀死玩家，如果不是玩家就会杀死自己
 ```
+
+TAQ 开门设置
+
+去variables表，将变量30050设置为12。 为开门。去掉就是关门，你可以试试
+
 
 修改荣誉值的方法！
 
@@ -1442,6 +1497,33 @@ id  name  item 1  item 2  item 3  item 4  item 5  item 6  item 7  item 8
 490  绿龙锁甲  15045  15046  20296  0  0  0  0  0
 491  蓝龙锁甲  15048  20295  15049  0  0  0  0  0
 492  暮光套装  20406  20408  20407  0  0  0  0  0
+```
+
+修改 /opt/wowserver/etc/mangosd.conf
+
+```shell
+vim /opt/wowserver/etc/mangosd.conf
+
+StartPlayerLevel = 60
+StartPlayerMoney = 399999999
+
+AlwaysMaxSkillForLevel = 1
+
+Instance.IgnoreLevel = 1
+Instance.IgnoreRaid = 1
+
+MaxPrimaryTradeSkill = 4
+
+MailDeliveryDelay = 60
+
+AllowTwoSide.Accounts = 1
+
+ListenRange.TextEmote = 100
+
+GuidReserveSize.Creature = 400
+GuidReserveSize.GameObject = 400
+
+GM.StartLevel            = 60
 ```
 
 See: [https://www.cnblogs.com/hmmcsdd/archive/2007/07/16/MangosSomeOneExperence.html](https://www.cnblogs.com/hmmcsdd/archive/2007/07/16/MangosSomeOneExperence.html)
